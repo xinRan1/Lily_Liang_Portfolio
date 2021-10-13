@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-p.css">
+    <title>Lily's website</title>
+  </head>
+
+  <style>
+div.gallery {
+  padding: 55px;
+  border: 1px solid #03c782;;
+}
+
+div.gallery:hover {
+  border: 5px solid #457b9d;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+div.desc:hover {
+  text-decoration: underline;
+}
+
+* {
+  background-color: #03c782;
+  box-sizing: border-box;
+}
+
+.responsive {
+  background-color: #03c782;
+
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+</style>
+  <body>
+
+  <nav class="fill">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    <li><a href="contactme.html">Contact Me</a></li>
+  </ul>
+</nav>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="bitcoin_demo.html">
+      <img src="images/bitcoin.png" alt="bitcoin demo" width="500" height="500">
+    </a>
+    <div class="desc">Bitcoin Prices' Time Series Data Analysis</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="deep_learning_demo.html">
+      <img src="images/deepLearning.png" alt="deep learning demo" width="500" height="500">
+    </a>
+    <div class="desc">Deep Learning Projects</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="spam_email_demo.html">
+      <img src="images/spam.png" alt="spam email demo" width="500" height="500">
+    </a>
+    <div class="desc">Spam E-mail Attacks Investigation</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="twitch_demo.html">
+      <img src="images/twitch.png" alt="twitch demo" width="500" height="500">
+    </a>
+    <div class="desc">Twitch Streams Explorer Web Application</div>
+  </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

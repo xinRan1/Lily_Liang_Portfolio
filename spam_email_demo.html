@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-c-button.css">
+    <title>Lily's website</title>
+  </head>
+  <body>
+
+  <nav class="fill">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    <li><a href="contactme.html">Contact Me</a></li>
+  </ul>
+</nav>
+<header>Spam E-mail Attacks Investigation</header>
+<center>
+
+  <a href="spamEmail/vis_codes/Spam_email_attacks_visualization.zip" class="btn-slide2">
+  <span class="circle2"><i class="fa fa-download"></i></span>
+  <span class="title2">Download</span>
+  <span class="title-hover2">Instruction</span>
+</a>
+</a>
+  <ul>
+    <h3>Extracted 4000+ metadata and contents from plaintexts by using Apache Tika; tokenized texts and understand attacker’s identity created in the emails, calculate urgency levels for email bodies and lastly get successful attacks’ time by checking metadata key-value pairs.</h3>
+    <p>“The first part is the attacker title. Based on our analysis,  the most frequently used attacker titles are "son", "manager", "director", “wife”, and “auditor”. Because most spam emails are trying to get money, attackers always pretend to be someone in charge of money. Hence, they often state they are the son or wife of a rich person who is in trouble. Or, they would state they are the manager, director or auditor who needs help to transfer or cover up money.”</p>
+    <li><img src="spamEmail/1.png" alt="spamEmail demo" width=25% height=10%></li>
+    <p>“The second part is the urgency expressed from the fraudulent emails. We think that the urgency, related to social engineering, can be represented by the frequency of key words and time expressions. For example, "urgent" and "in # minutes”. We have 3 urgency levels in total, represented by 0 to 2, corresponding to the lowest to the highest level. By counting words with their conjugations/plural forms and certain time expressions, we had 436 out of 3992 emails in level 0, 1551 emails in level 1 and 2005 emails in level 2. Besides, the most frequently used level-2-word is "now"(3403 times). For level 1, the word is "need"(3030 times).
+      ”
+    </p>
+    <p>“The third part is the date and time of the email attack. Based on our results, we can see that a dramatic increase in attack volume existed in 2003, almost 4 times of the attack in 2002. Since then, the email attack increased every year and experienced a double increase, also the peak of the email attack, in 2006. Our group then generated the average volume of email attacks per month. April, October and December are the three months with the least email attacks (all less than 250). June has the highest number of attacks, almost close to 350.
+      ”</p>
+    <li><img src="spamEmail/2.png" alt="spamEmail demo" width=40%  height=20%></li>
+    
+    <li><img src="spamEmail/3.png" alt="spamEmail demo" width=40%  height=20%></li>
+    <h5>Calculated email bodies’ similarity:</h5>
+    <li><img src="spamEmail/4.png" alt="spamEmail demo" width=50%  height=20%></li>
+    <h5>Then, did clustering over Jaccard, Cosine, Edit Similarity/Distance </h5>
+    <li><img src="spamEmail/5.png" alt="spamEmail demo" width=50%  height=20%></li>
+    <h5>Used DCGAN to generate attacker faces:</h5>
+    <li><img src="spamEmail/6.png" alt="spamEmail demo" width=50%  height=20%></li>
+    <p>Face_generator-0194; face_generator-1097, face_generator-0108, face_generator-1478</p>
+    <h5>Generated automatic captions for 1600 images by using USC im2txt and used these images to launch image-base searching for similar pictures within Image Space:</h5>
+    <li><img src="spamEmail/7.png" alt="spamEmail demo" width=50% height=20%></li>
+    <h5>Image Search: search a certain image and similar images will show up:</h5>
+    <li><img src="spamEmail/8.png" alt="spamEmail demo" width=50%  height=20%></li>
+    <h5>Plotted findings on webpages by using D3 with html and js, designed dynamic visualizations powered by ElasticSearch:</h5>
+    <h6>1. Scatterplot</h6>
+    <p>
+      From all high-frequency words, which emerged in the email bodies, we reduced some meaningless words, like is/are or you, and picked 50 ones to count their appearance in both attacker-to-victim and victim-to-attacker emails. 
+      From the visualization, words like “send”, “help” and “best” have similar frequency in both victim and attacker emails. In the attacker emails, words related to money, e.g. business, bank, account, transaction, have the heaviest attributions. In the victim emails, highly frequent words would be “message”, “sure”, “thanks”. Among all these words, attacker-to-victim ones take the dominance, whose amount is almost 1.5 times of the victim-to-attacker emails. 
+      From this, we can further tell which words are more likely from emails in one direction. This would be meaningful for the reverse email type detection in the future. 
+      </p>
+    <li><img src="spamEmail/9.png" alt="spamEmail demo" width=50% height=20%></li>
+    <h6>2. Zoomable TreeMap</h6>
+    <p>Inside the zoomable treemap, the initial state shows 17 different clusters calculated from Jaccard Similarity. If users click in a certain cluster, then the graph will show 4 attack types’ count inside the current cluster. By clicking on a certain attacker type, users will know a more detailed summary based on features in the attack type. The reason that we choose zoomable treemap is this technique can show the detailed distributions of emails under different attacker types. What's more, the colors and shapes can offer the audience more straightforward understanding about the data structure.</p>
+    <li><img src="spamEmail/10.png" alt="spamEmail demo" width=50%  height=20%></li>
+    <li><img src="spamEmail/11.png" alt="spamEmail demo" width=50%  height=20%></li>
+    <li><img src="spamEmail/12.png" alt="spamEmail demo" width=50%  height=20%></li>
+    <li><img src="spamEmail/13.png" alt="spamEmail demo" width=50%  height=20%></li>
+    <li><img src="spamEmail/14.png" alt="spamEmail demo" width=50%  height=20%></li>
+    <li><img src="spamEmail/15.png" alt="spamEmail demo" width=50% height=20%></li>
+    <h6>3. Pie Chart using ElasticSearch</h6>
+    <p>This pie chart shows the URL Classification based on URL labels : 'good' or 'bad'. We chose Pie Chart to prove there is a significant URL classification difference between the good URL and the bad URL. Using an additional data set we have evaluated if a url is classified under a 'bad' category (meaning it’s a known spam link) while the others are categorized 'good'. We also have a category of url types and we analyze their distribution with url labels. This visualization can clearly indicate dominance of some url types under different labels. The legends combined with the count also tell people exactly how many urls consist of a type. 
+
+      According to this chart, we can see that the Arts is the major part of the good URL while arts is one of the lowest parts of the bad URL. To build this we have used the aggregations method from Elasticsearch. We have leveraged Logstash to ingest our data into elasticsearch index and have written an aggregation query to request the data from index and show the pie charts.   
+      </p>
+    <li><img src="spamEmail/16.png" alt="spamEmail demo" width=50%  height=20%></li>
+  </ul>
+</center>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
