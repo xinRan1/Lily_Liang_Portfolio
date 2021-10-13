@@ -1,0 +1,36 @@
+
+
+$base-color: green;
+$pr: 1%;
+
+body {
+    background-color: $base-color;
+}
+
+html{
+  background-color: #03c782;
+}
+
+.text-underline-hover {
+    text-decoration: none;
+}
+
+.text-underline-hover:hover {
+    text-decoration: underline;
+}
+.h1{
+  color: #111614;
+  font-size: 90px;
+}
+
+a:not([class]) {
+    text-decoration: none;
+}
+
+a:not([class]):hover {
+    text-decoration: underline;
+}
+
+nav{
+  background-color: #03c782;
+}
